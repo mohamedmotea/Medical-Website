@@ -1,0 +1,89 @@
+header a {
+  color:var(--textColor) !important;
+  font-weight: 500 !important
+}
+
+header button, header button a{
+  background-color: var(--mainColor) !important;
+  color: var(--lightColor) !important;
+  transition: .5s;
+}
+header button span {
+
+  background-color: var(--lightColor);
+  color:var(--mainColor);
+}
+header .dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+header .dropdown-toggle::after{
+border:none;
+content: "+";
+color:#444;
+opacity: .5;
+transition: transform .5s;
+}
+header a:hover.dropdown-toggle::after {
+  transform: rotate(45deg);
+}
+header a:hover,
+header  a:hover.dropdown-toggle::after{
+  color: var(--subColor) !important;
+  opacity: 1;
+}
+header button:hover ,header button:hover a{
+  background-color:#4d509b !important;
+  color:var(--lightColor) !important;
+}
+
+header button:hover,
+header .searchIcon:hover {
+  animation: movyScale .6s 1;
+}
+
+header .dropdown-menu a:hover {
+  background-color: transparent ;
+  color:var(--mainColor) !important; 
+}
+header .dropdown-menu a{
+  position: relative;
+  width: fit-content;
+  padding: 5px 0;
+  margin-left: 10px;
+  color:#666 !important;
+  font-weight: 400 !important;
+
+}
+
+header .dropdown-menu a::after {
+  position: absolute;
+  content:'';
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--mainColor);
+  width: 0;
+  transition: width .5s !important;
+}
+header .dropdown-menu a:hover::after{
+
+  width:100%;
+
+}
+@keyframes movyScale {
+  0%{
+    transform: scale(1);
+  }
+  60%{
+    transform: scale(1.02);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@media (max-width:768px){
+  header nav button:last-child{
+    display: none;
+  }
+}

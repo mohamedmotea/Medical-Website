@@ -1,0 +1,63 @@
+#contact textarea {
+  min-height: 150px;
+  max-height: 200px;
+}
+#contact form button {
+  background-color: var(--subColor);
+  color:var(--lightColor);
+  transition: opacity .3s;
+}
+#contact form button:hover {
+  opacity: .9;
+}
+#contact form .form-box {
+  background-image: url("../../Assets/contact-pic.jpg");
+  height: 100%;
+  /* background-size: contain; */
+  position: relative;
+  color:var(--lightColor);
+  z-index: 1;
+  font-weight: 500;
+  letter-spacing: 0.91px;
+
+}
+#contact .overlay{
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: var(--mainColor);
+opacity: .9;
+inset: 0;
+z-index: -1;
+}
+#contact .links li i {
+  background-color: var(--lightColor);
+  color:var(--mainColor);
+  cursor: pointer;
+  transition: .3s;
+}
+#contact .links li:hover i {
+  background-color: var(--subColor);
+  color:var(--lightColor)
+}
+
+#contact .box p {
+  color: var(--halfBlack);
+}
+#contact .box:hover img {
+  animation: fastMove .1s 4 alternate;
+}
+
+
+@keyframes fastMove {
+  0%{
+  transform: translateX(2px);
+  }
+  50%{
+    transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-2px);
+    }
+}

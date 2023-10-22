@@ -1,0 +1,36 @@
+#rowNews .box{
+  background-color: #ffffffdd;
+  box-shadow: 1px 2px 3px #00000010;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  opacity: .5;
+  transition: .3s ease-in-out;
+}
+#rowNews .col-md-4:nth-child(2) > .box{
+  background-color:var(--lightColor) !important;
+  opacity: 1;
+}
+#rowNews .box:hover {
+  box-shadow: 1px 2px 3px #ffffffbf;
+  opacity: 1;
+}
+#rowNews .box .attrForDoc {
+  color:var(--subColor);
+  font-size: 15px;
+}
+#rowNews .box h4 a{
+  color:var(--textColor) 
+}
+#rowNews .box button {
+  border: 2px solid var(--mainColor) !important;
+  color:var(--mainColor);
+  transition: .3s ease-in-out;
+}
+#rowNews .box button:hover{
+background-color: var(--mainColor);
+color:var(--lightColor)
+}
+#rowNews .box button span {
+  background-color: var(--mainColor);
+  color:var(--lightColor)
+}

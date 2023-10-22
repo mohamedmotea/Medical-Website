@@ -1,0 +1,40 @@
+
+
+#hero .desc{
+  background-image: url("../../Assets/ro.png");
+  
+width: fit-content;
+color:var(--mainColor);
+font-weight: 400;
+}
+#hero button {
+  background-color: var(--subColor);
+  color:var(--lightColor);
+  letter-spacing: 2px;
+  transition: .2s;
+}
+#hero button:hover {
+  opacity: .8;
+}
+
+#hero {
+
+  position: relative;
+
+background-image: url("../../Assets/scattered-forcefields.svg");
+background-size: cover;
+background-color: transparent !important;
+height: 100%;
+}
+#hero .doctor-img {
+  animation: movy 1s infinite alternate;
+}
+@keyframes movy {
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0);
+
+  }
+}

@@ -1,0 +1,19 @@
+.ser-row .box {
+  box-shadow: 1px 1px 5px #00000020;
+  background-color: rgba(255, 255, 255, .7);
+}
+.ser-row .box i {
+  color:var(--subColor);
+  /* opacity: .7; */
+}
+.ser-row .box p{
+  color:var(--halfBlack)
+}
+.ser-row .box button {
+  background-color: var(--mainColor);
+  color:var(--lightColor);
+  transition: .2s ease-in-out;
+}
+.ser-row .box button:hover {
+  opacity: .9;
+}

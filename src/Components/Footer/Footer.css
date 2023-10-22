@@ -1,0 +1,54 @@
+footer p,
+footer ul li a{
+  color:var(--halfBlack) 
+}
+footer span:first-child, 
+footer i:first-child
+ {
+
+  color:var(--subColor)
+}
+ .img-ani-first {
+  left: 5px;
+  bottom: -20px;
+  top:50%;
+  z-index: -1;
+  width: 80px;
+  animation: moveUpDown .8s infinite alternate;
+}
+
+footer form button {
+  background-color: var(--subColor) !important;
+  color: var(--lightColor) !important;
+}
+footer ul li a{
+  transition: .2s ease-in-out;
+
+}
+footer ul li a:hover {
+  color:var(--mainColor);
+}
+
+
+
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+footer .wave-pic{
+  animation:moveltr 1s infinite alternate;
+  width: 80px;
+}
+@keyframes moveltr {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}

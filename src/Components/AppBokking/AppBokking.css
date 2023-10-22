@@ -1,0 +1,24 @@
+#appBooking form {
+  background-color: var(--lightColor);
+  box-shadow: 1px 5px 6px #0000004d;
+  border-radius: 50px;
+}
+#appBooking form::after {
+  position: absolute;
+  content: '';
+  border: 3px solid var(--mainColor);
+  left: -18px;
+  top:-18px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  z-index: -1;
+}
+#appBooking form button {
+  background-color: var(--subColor);
+  color:var(--lightColor);
+  transition: .3s ease-in-out;
+}
+#appBooking form button:hover {
+  opacity: .9;
+}

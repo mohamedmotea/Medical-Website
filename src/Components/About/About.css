@@ -1,0 +1,128 @@
+#about .doc1{
+  border-radius: 0px 55px 55px 55px;
+}
+#about .doc2{
+  border-radius: 55px 0px 55px 55px;
+}
+#about .doc3{
+  border-radius: 40px 40px 40px 0px;
+}
+#about .doc4 {
+  width: 300px ;
+  height: 100%;
+  background-color: #e6e7ff;
+  border-radius: 40px 40px 0px 40px ;
+  position: relative;
+  color:var(--mainColor) 
+}
+#about .doc4::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  border-radius: 40px 40px 0px 40px ;
+  border: 4px solid var(--mainColor);
+  bottom: -10px;
+  right:-10px
+}
+#about .about-ani-center{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: var(--subColor);
+  border-radius: 10px;
+  top:50%;
+  left:38%;
+  transform: rotate(45deg);
+}
+
+/*** right side**/
+
+#about p > span {
+  color:var(--halfBlack)
+}
+#about .row i {
+  border-radius: 0 55px 55px 0 ;
+}
+#about .row i {
+  background-color: var(--subColor);
+  color:var(--mainColor);
+  opacity: .9;
+}
+
+#about .row i + p {
+  font-weight: 500;
+}
+#about .row .box:hover i {
+  animation: fastMove .1s 3 alternate;
+}
+#about button {
+  background-color: var(--mainColor);
+  color:var(--lightColor);
+  transition: .3s ease-in-out;
+}
+#about button:hover {
+  opacity: .9;
+}
+
+.countRow .box {
+  background-color: var(--lightColor);
+  transition: .3s ease-in-out;
+}
+
+.countRow .box span {
+  -webkit-text-stroke: 1px var(--subColor);
+  color:var(--subColor)
+}
+.countRow .box p {
+  color:var(--halfBlack);
+}
+.countRow .box::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left:-15px;
+  top:-15px;
+  z-index: -1;
+  border: 3px solid  var(--mainColor);
+  border-radius: 20px;
+}
+.countRow .box:hover {
+  background-color: var(--mainColor);
+  color:var(--lightColor) 
+}
+.countRow .box:hover p ,
+.countRow .box:hover span{
+  color:var(--lightColor);
+  -webkit-text-stroke: 0px;
+
+}
+
+/*****About Best Doc*/
+
+.about-best-doc .box .best-img {
+  background-image: url('../../Assets/bg-pic.png');
+  height: 300px !important;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.about-best-doc .box .best-img img{
+  width: 150px;
+  height: 150px;
+}
+.about-best-doc span {
+  color:var(--subColor);
+  letter-spacing: .9px;
+}
+.about-best-doc ul li {
+  background-color: var(--mainColor);
+  color:var(--lightColor);
+  transition: .3s ease-in-out;
+  
+}
+.about-best-doc ul li:hover {
+  background-color: var(--subColor);
+}

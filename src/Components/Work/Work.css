@@ -1,0 +1,32 @@
+#work .row .box {
+  background-color: var(--lightColor);
+  transition: .3s ease-in-out;
+}
+#work .row .col-md-4:nth-child(2) .box{
+  background-color: var(--subColor);
+  transform: translateY(-40px);
+  color:var(--lightColor);
+  
+  
+
+}
+#work .row .workNum {
+  -webkit-text-stroke: 2px var(--subColor);
+  color:var(--lightColor);
+}
+#work .row button {
+  background-color: var(--textColor);
+  opacity: .8;
+  color:var(--lightColor);
+}
+#work .row .box:hover {
+  background-color: var(--subColor);
+  color:var(--lightColor)
+}
+#work .row .box:hover .workNum {
+  -webkit-text-stroke: 1px #ff979b;
+} 
+#work .row .box:hover button {
+  background-color: var(--lightColor);
+  color:var(--textColor)
+}
