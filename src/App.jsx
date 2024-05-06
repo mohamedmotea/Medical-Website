@@ -1,7 +1,7 @@
 
 
 
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Layout from './Components/Layout/Layout';
 import Contact from './Components/Contact/Contact';
